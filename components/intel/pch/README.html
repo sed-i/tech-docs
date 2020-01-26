@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>PCH - System76 Technical Documentation</title>
+        <title>Platform Controller Hub (PCH) - System76 Technical Documentation</title>
         
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -81,7 +81,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div id="sidebar-scrollbox" class="sidebar-scrollbox">
-                <ol class="chapter"><li class="expanded affix "><a href="../../../README.html">Introduction</a></li><li class="expanded "><a href="../../../models/README.html"><strong aria-hidden="true">1.</strong> Models</a></li><li><ol class="section"><li class="expanded "><a href="../../../models/lemp9/README.html"><strong aria-hidden="true">1.1.</strong> Lemur Pro (lemp9)</a></li></ol></li><li class="expanded "><a href="../../../components/README.html"><strong aria-hidden="true">2.</strong> Components</a></li><li><ol class="section"><li class="expanded "><a href="../../../components/intel/README.html"><strong aria-hidden="true">2.1.</strong> Intel</a></li><li><ol class="section"><li class="expanded "><a href="../../../components/intel/cpu/README.html"><strong aria-hidden="true">2.1.1.</strong> CPU</a></li><li><ol class="section"><li class="expanded "><a href="../../../components/intel/cpu/cml-u/README.html"><strong aria-hidden="true">2.1.1.1.</strong> CML-U</a></li></ol></li><li class="expanded "><a href="../../../components/intel/pch/README.html" class="active"><strong aria-hidden="true">2.1.2.</strong> PCH</a></li><li><ol class="section"><li class="expanded "><a href="../../../components/intel/pch/400-lp/README.html"><strong aria-hidden="true">2.1.2.1.</strong> 400 PCH-LP</a></li></ol></li></ol></li></ol></li></ol>
+                <ol class="chapter"><li class="expanded affix "><a href="../../../README.html">Introduction</a></li><li class="expanded "><a href="../../../models/README.html"><strong aria-hidden="true">1.</strong> Models</a></li><li><ol class="section"><li class="expanded "><a href="../../../models/lemp9/README.html"><strong aria-hidden="true">1.1.</strong> Lemur Pro (lemp9)</a></li></ol></li><li class="expanded "><a href="../../../components/README.html"><strong aria-hidden="true">2.</strong> Components</a></li><li><ol class="section"><li class="expanded "><a href="../../../components/intel/README.html"><strong aria-hidden="true">2.1.</strong> Intel</a></li><li><ol class="section"><li class="expanded "><a href="../../../components/intel/cpu/README.html"><strong aria-hidden="true">2.1.1.</strong> Central Processing Unit (CPU)</a></li><li><ol class="section"><li class="expanded "><a href="../../../components/intel/cpu/cml-u/README.html"><strong aria-hidden="true">2.1.1.1.</strong> Comet Lake-U (CML-U)</a></li></ol></li><li class="expanded "><a href="../../../components/intel/me/README.html"><strong aria-hidden="true">2.1.2.</strong> Management Engine (ME)</a></li><li class="expanded "><a href="../../../components/intel/pch/README.html" class="active"><strong aria-hidden="true">2.1.3.</strong> Platform Controller Hub (PCH)</a></li><li><ol class="section"><li class="expanded "><a href="../../../components/intel/pch/400-lp/README.html"><strong aria-hidden="true">2.1.3.1.</strong> 400 Series Low-Power Platform Controller Hub (400 PCH-LP)</a></li></ol></li></ol></li><li class="expanded "><a href="../../../components/ti/README.html"><strong aria-hidden="true">2.2.</strong> Texas Instruments (TI)</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -148,7 +148,10 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1><a class="header" href="#intel-pchs" id="intel-pchs">Intel PCHs</a></h1>
+                        <h1><a class="header" href="#intel-platform-controller-hub-pch" id="intel-platform-controller-hub-pch">Intel Platform Controller Hub (PCH)</a></h1>
+<p>The Intel Platform Controller Hub provides I/O to
+<a href="../cpu/README.html">Intel CPUs</a>, typically over the
+<a href="https://en.wikipedia.org/wiki/Direct_Media_Interface">Direct Media Interface</a>.</p>
 <ul>
 <li><a href="400-lp/README.html">400 Series Low-Power PCH (400 PCH-LP)</a></li>
 </ul>
@@ -158,7 +161,7 @@
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
                         
-                            <a rel="prev" href="../../../components/intel/cpu/cml-u/README.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../../../components/intel/me/README.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
                         
@@ -176,7 +179,7 @@
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
                 
-                    <a href="../../../components/intel/cpu/cml-u/README.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a href="../../../components/intel/me/README.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
                 
@@ -190,6 +193,21 @@
 
         </div>
 
+        
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3001");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload(true); // force reload from server (not from cache)
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
         
 
         

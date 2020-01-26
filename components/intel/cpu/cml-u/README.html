@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>CML-U - System76 Technical Documentation</title>
+        <title>Comet Lake-U (CML-U) - System76 Technical Documentation</title>
         
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -81,7 +81,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div id="sidebar-scrollbox" class="sidebar-scrollbox">
-                <ol class="chapter"><li class="expanded affix "><a href="../../../../README.html">Introduction</a></li><li class="expanded "><a href="../../../../models/README.html"><strong aria-hidden="true">1.</strong> Models</a></li><li><ol class="section"><li class="expanded "><a href="../../../../models/lemp9/README.html"><strong aria-hidden="true">1.1.</strong> Lemur Pro (lemp9)</a></li></ol></li><li class="expanded "><a href="../../../../components/README.html"><strong aria-hidden="true">2.</strong> Components</a></li><li><ol class="section"><li class="expanded "><a href="../../../../components/intel/README.html"><strong aria-hidden="true">2.1.</strong> Intel</a></li><li><ol class="section"><li class="expanded "><a href="../../../../components/intel/cpu/README.html"><strong aria-hidden="true">2.1.1.</strong> CPU</a></li><li><ol class="section"><li class="expanded "><a href="../../../../components/intel/cpu/cml-u/README.html" class="active"><strong aria-hidden="true">2.1.1.1.</strong> CML-U</a></li></ol></li><li class="expanded "><a href="../../../../components/intel/pch/README.html"><strong aria-hidden="true">2.1.2.</strong> PCH</a></li><li><ol class="section"><li class="expanded "><a href="../../../../components/intel/pch/400-lp/README.html"><strong aria-hidden="true">2.1.2.1.</strong> 400 PCH-LP</a></li></ol></li></ol></li></ol></li></ol>
+                <ol class="chapter"><li class="expanded affix "><a href="../../../../README.html">Introduction</a></li><li class="expanded "><a href="../../../../models/README.html"><strong aria-hidden="true">1.</strong> Models</a></li><li><ol class="section"><li class="expanded "><a href="../../../../models/lemp9/README.html"><strong aria-hidden="true">1.1.</strong> Lemur Pro (lemp9)</a></li></ol></li><li class="expanded "><a href="../../../../components/README.html"><strong aria-hidden="true">2.</strong> Components</a></li><li><ol class="section"><li class="expanded "><a href="../../../../components/intel/README.html"><strong aria-hidden="true">2.1.</strong> Intel</a></li><li><ol class="section"><li class="expanded "><a href="../../../../components/intel/cpu/README.html"><strong aria-hidden="true">2.1.1.</strong> Central Processing Unit (CPU)</a></li><li><ol class="section"><li class="expanded "><a href="../../../../components/intel/cpu/cml-u/README.html" class="active"><strong aria-hidden="true">2.1.1.1.</strong> Comet Lake-U (CML-U)</a></li></ol></li><li class="expanded "><a href="../../../../components/intel/me/README.html"><strong aria-hidden="true">2.1.2.</strong> Management Engine (ME)</a></li><li class="expanded "><a href="../../../../components/intel/pch/README.html"><strong aria-hidden="true">2.1.3.</strong> Platform Controller Hub (PCH)</a></li><li><ol class="section"><li class="expanded "><a href="../../../../components/intel/pch/400-lp/README.html"><strong aria-hidden="true">2.1.3.1.</strong> 400 Series Low-Power Platform Controller Hub (400 PCH-LP)</a></li></ol></li></ol></li><li class="expanded "><a href="../../../../components/ti/README.html"><strong aria-hidden="true">2.2.</strong> Texas Instruments (TI)</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -150,9 +150,14 @@
                     <main>
                         <h1><a class="header" href="#intel-comet-lake-u-cml-u-cpu" id="intel-comet-lake-u-cml-u-cpu">Intel Comet Lake-U (CML-U) CPU</a></h1>
 <p>The Intel Comet Lake-U CPU is designed for mobile devices and includes an
-integrated PCH, the <a href="../../pch/400-lp/README.html">Intel 400 series chipset</a>.</p>
-<p>The available SKUs may be seen at the <a href="https://ark.intel.com/content/www/us/en/ark/products/codename/90354/comet-lake.html">Intel ARK</a>.</p>
-<h2><a class="header" href="#firmware-support" id="firmware-support">Firmware Support</a></h2>
+integrated PCH, the <a href="../../pch/400-lp/README.html">Intel 400 series chipset</a>.
+The available SKUs may be seen at the <a href="https://ark.intel.com/content/www/us/en/ark/products/codename/90354/comet-lake.html">Intel ARK</a>.</p>
+<p><strong>Documentation</strong></p>
+<p>Documentation for the CML-U CPU may be found at the <a href="https://www.intel.com/content/www/us/en/design/resource-design-center.html">Intel Resource and Design Center</a>.
+Some documentation may require signing an NDA. After logging in with a privileged
+account, the <a href="https://www.intel.com/content/www/us/en/secure/design/confidential/products-and-solutions/processors-and-chipsets/comet-lake-u/technical-library.html">Comet Lake U Technical Library</a>
+will be available with all relevant documentation.</p>
+<p><strong>Firmware Support</strong></p>
 <p>Support for the CML-U CPU is provided by the following:</p>
 <ul>
 <li><a href="https://review.coreboot.org/cgit/coreboot.git/tree/src/soc/intel/cannonlake">coreboot soc/cannonlake</a>
@@ -176,7 +181,7 @@ integrated PCH, the <a href="../../pch/400-lp/README.html">Intel 400 series chip
 <li>Correct VBT is provided with System76 firmware</li>
 </ul>
 </li>
-<li>Intel Management Engine (ME) 14.0
+<li><a href="../../me/README.html">Intel Management Engine (ME) 14.0</a>
 <ul>
 <li>Configured using the Intel Firmware Descriptor (FD) as well as ME filesystem</li>
 <li>Intel FD and ME filesystem is edited by Intel Flash Image Tool (FIT)</li>
@@ -192,11 +197,6 @@ integrated PCH, the <a href="../../pch/400-lp/README.html">Intel 400 series chip
 </li>
 <li>Model-specific configuration can be found in model documentation</li>
 </ul>
-<h2><a class="header" href="#documentation" id="documentation">Documentation</a></h2>
-<p>Documentation for the CML-U CPU may be found at the <a href="https://www.intel.com/content/www/us/en/design/resource-design-center.html">Intel Resource and Design Center</a>.
-Some documentation may require signing an NDA. After logging in with a privileged
-account, the <a href="https://www.intel.com/content/www/us/en/secure/design/confidential/products-and-solutions/processors-and-chipsets/comet-lake-u/technical-library.html">Comet Lake U Technical Library</a>
-will be available with all relevant documentation.</p>
 
                     </main>
 
@@ -209,7 +209,7 @@ will be available with all relevant documentation.</p>
                         
 
                         
-                            <a rel="next" href="../../../../components/intel/pch/README.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="../../../../components/intel/me/README.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         
@@ -227,7 +227,7 @@ will be available with all relevant documentation.</p>
                 
 
                 
-                    <a href="../../../../components/intel/pch/README.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a href="../../../../components/intel/me/README.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
                 
@@ -235,6 +235,21 @@ will be available with all relevant documentation.</p>
 
         </div>
 
+        
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3001");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload(true); // force reload from server (not from cache)
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
         
 
         

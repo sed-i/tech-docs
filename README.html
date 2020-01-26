@@ -81,7 +81,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div id="sidebar-scrollbox" class="sidebar-scrollbox">
-                <ol class="chapter"><li class="expanded affix "><a href="README.html" class="active">Introduction</a></li><li class="expanded "><a href="models/README.html"><strong aria-hidden="true">1.</strong> Models</a></li><li><ol class="section"><li class="expanded "><a href="models/lemp9/README.html"><strong aria-hidden="true">1.1.</strong> Lemur Pro (lemp9)</a></li></ol></li><li class="expanded "><a href="components/README.html"><strong aria-hidden="true">2.</strong> Components</a></li><li><ol class="section"><li class="expanded "><a href="components/intel/README.html"><strong aria-hidden="true">2.1.</strong> Intel</a></li><li><ol class="section"><li class="expanded "><a href="components/intel/cpu/README.html"><strong aria-hidden="true">2.1.1.</strong> CPU</a></li><li><ol class="section"><li class="expanded "><a href="components/intel/cpu/cml-u/README.html"><strong aria-hidden="true">2.1.1.1.</strong> CML-U</a></li></ol></li><li class="expanded "><a href="components/intel/pch/README.html"><strong aria-hidden="true">2.1.2.</strong> PCH</a></li><li><ol class="section"><li class="expanded "><a href="components/intel/pch/400-lp/README.html"><strong aria-hidden="true">2.1.2.1.</strong> 400 PCH-LP</a></li></ol></li></ol></li></ol></li></ol>
+                <ol class="chapter"><li class="expanded affix "><a href="README.html" class="active">Introduction</a></li><li class="expanded "><a href="models/README.html"><strong aria-hidden="true">1.</strong> Models</a></li><li><ol class="section"><li class="expanded "><a href="models/lemp9/README.html"><strong aria-hidden="true">1.1.</strong> Lemur Pro (lemp9)</a></li></ol></li><li class="expanded "><a href="components/README.html"><strong aria-hidden="true">2.</strong> Components</a></li><li><ol class="section"><li class="expanded "><a href="components/intel/README.html"><strong aria-hidden="true">2.1.</strong> Intel</a></li><li><ol class="section"><li class="expanded "><a href="components/intel/cpu/README.html"><strong aria-hidden="true">2.1.1.</strong> Central Processing Unit (CPU)</a></li><li><ol class="section"><li class="expanded "><a href="components/intel/cpu/cml-u/README.html"><strong aria-hidden="true">2.1.1.1.</strong> Comet Lake-U (CML-U)</a></li></ol></li><li class="expanded "><a href="components/intel/me/README.html"><strong aria-hidden="true">2.1.2.</strong> Management Engine (ME)</a></li><li class="expanded "><a href="components/intel/pch/README.html"><strong aria-hidden="true">2.1.3.</strong> Platform Controller Hub (PCH)</a></li><li><ol class="section"><li class="expanded "><a href="components/intel/pch/400-lp/README.html"><strong aria-hidden="true">2.1.3.1.</strong> 400 Series Low-Power Platform Controller Hub (400 PCH-LP)</a></li></ol></li></ol></li><li class="expanded "><a href="components/ti/README.html"><strong aria-hidden="true">2.2.</strong> Texas Instruments (TI)</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -149,7 +149,9 @@
                 <div id="content" class="content">
                     <main>
                         <h1><a class="header" href="#introduction" id="introduction">Introduction</a></h1>
-<p>This book contains technical documentation for System76 models.</p>
+<p>This book contains technical documentation for System76 models. The source can
+be viewed <a href="https://github.com/system76/tech-docs">on GitHub</a>. It is recommended
+to start with one of the model pages, as they link to all relevent information.</p>
 <ul>
 <li><a href="models/README.html">Models</a></li>
 <li><a href="components/README.html">Components</a></li>
@@ -184,6 +186,21 @@
 
         </div>
 
+        
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3001");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload(true); // force reload from server (not from cache)
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
         
 
         
