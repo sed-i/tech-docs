@@ -2533,7 +2533,11 @@ near the hinges.</li>
 <li><a href="models/meer5/repairs.html#removing-the-bottom-panel">Removing the bottom panel</a></li>
 <li><a href="models/meer5/repairs.html#replacing-the-m2-drive">Replacing the M.2 drive</a></li>
 <li><a href="models/meer5/repairs.html#replacing-the-ram">Replacing the RAM</a></li>
-<li><a href="models/meer5/repairs.html#addingremoving-25-storage-drive">Adding/removing 2.5&quot; storage drives</a></li>
+<li><a href="models/meer5/repairs.html#addingremoving-a-25-storage-drive">Adding/removing a 2.5&quot; storage drive</a></li>
+<li><a href="models/meer5/repairs.html#resetting-cmos">Resetting CMOS</a></li>
+<li><a href="models/meer5/repairs.html#removing-the-motherboard">Removing the motherboard</a></li>
+<li><a href="models/meer5/repairs.html#removing-the-fan">Removing the fan</a></li>
+<li><a href="models/meer5/repairs.html#replacing-thermal-paste">Replacing thermal paste</a></li>
 </ul>
 <h2><a class="header" href="#removing-the-bottom-panel" id="removing-the-bottom-panel">Removing the bottom panel:</a></h2>
 <p>The bottom panel can be removed to access the internal components.</p>
@@ -2582,7 +2586,7 @@ near the hinges.</li>
 </ol>
 <p><img src="models/meer5/./img/ram-latch.jpg" alt="RAM latch" /></p>
 <ol start="3">
-<li>Once both latches are released, the RAM stick will pop up, pushed the spring tension from the RAM slot. This means the RAM stick can be pulled backwards out of the slot.</li>
+<li>Once both latches are released, the RAM stick will pop up, pushed by the spring tension from the RAM slot. This means the RAM stick can be pulled backwards out of the slot.</li>
 </ol>
 <p><img src="models/meer5/./img/unlatched-ram.jpg" alt="Unlatched RAM" /></p>
 <ol start="4">
@@ -2610,6 +2614,103 @@ near the hinges.</li>
 <p><img src="models/meer5/./img/drive-insertion.jpg" alt="2.5&quot; drive installation" /></p>
 <ol start="4">
 <li>Replace the bottom panel.</li>
+</ol>
+<h2><a class="header" href="#resetting-cmos" id="resetting-cmos">Resetting CMOS:</a></h2>
+<p>Sometimes resetting CMOS can help if your Meerkat is not booting. A CMOS reset will restore BIOS settings to their factory defaults, so you may have to reconfigure your BIOS afterwards.</p>
+<p><strong>Tools required:</strong> Cross-head (Phillips) screwdriver and (optionally) tweezers<br />
+<strong>Time estimate:</strong> 15 minutes<br />
+<strong>Difficulty:</strong> Medium <span style="color:orange;">●</span></p>
+<h3><a class="header" href="#steps-to-reset-cmos" id="steps-to-reset-cmos">Steps to reset CMOS:</a></h3>
+<ol>
+<li>Follow the steps above to <a href="models/meer5/repairs.html#removing-the-bottom-panel">remove the bottom panel</a> and <a href="models/meer5/repairs.html#replacing-the-m2-drive">remove the M.2 drive</a>.</li>
+<li>Disconnect the CMOS battery connector, shown circled in red below. Tweezers may make this easier, but try to pull it by the plug itself rather than by the wires.</li>
+</ol>
+<p><img src="models/meer5/./img/cmos-connector.jpg" alt="CMOS battery connector" /></p>
+<ol start="3">
+<li>Leave the connector unplugged for several minutes. CMOS values don't always clear instantly, and sometimes it takes a couple minutes for them to reset.</li>
+<li>Reconnect the CMOS battery.</li>
+<li>Replace the M.2 drive and the bottom panel.</li>
+<li>When you boot your Meerkat after resetting CMOS, it may take a minute or two longer than usual to boot the first time. It has to re-initialize some of the CMOS values that were reset.</li>
+</ol>
+<h2><a class="header" href="#removing-the-motherboard" id="removing-the-motherboard">Removing the Motherboard:</a></h2>
+<p>Removing the motherboard is necessary for removing the cooling fan, cleaning the CPU heatsink, and replacing the CPU thermal paste. </p>
+<p><strong>Tools required:</strong> Cross-head (Phillips) screwdriver<br />
+<strong>Time estimate:</strong> 20 minutes<br />
+<strong>Difficulty:</strong> High <span style="color:red;">●</span></p>
+<h3><a class="header" href="#steps-to-remove-the-motherboard" id="steps-to-remove-the-motherboard">Steps to remove the motherboard:</a></h3>
+<ol>
+<li>Follow the steps above to <a href="models/meer5/repairs.html#removing-the-bottom-panel">remove the bottom panel</a>, <a href="models/meer5/repairs.html#replacing-the-m2-drive">remove the M.2 drive</a>, and <a href="models/meer5/repairs.html#replacing-the-ram">remove the RAM</a>.</li>
+<li>If your Meerkat is the tall variety, disconnect the ribbon cable that leads to the 2.5&quot; drive bay built into the bottom panel. The small white latch comes up to unlock the cable, then the cable can be gently pulled free from its socket.</li>
+</ol>
+<p><img src="models/meer5/./img/sata-bay-connector.jpg" alt="SATA drive bay ribbon cable connector" /></p>
+<ol start="3">
+<li>Disconnect the front microphone cable.</li>
+</ol>
+<p><img src="models/meer5/./img/front-mic-connector.jpg" alt="Front microphone connector" /></p>
+<ol start="4">
+<li>Disconnect the two wireless antenna cables.</li>
+</ol>
+<p><img src="models/meer5/./img/wifi-antenna-connectors.jpg" alt="Wireless antenna connectors" /></p>
+<ol start="5">
+<li>Remove the two motherboard mounting screws.</li>
+</ol>
+<p><img src="models/meer5/./img/motherboard-screws.jpg" alt="Motherboard mounting screws" /></p>
+<ol start="6">
+<li>Carefully lift the motherboard out of the case. It is easiest to lift from the back side, grabbing the USB type A ports as shown below. The back wall of the case can be pulled slightly outwards, away from the motherboard, to help the ports come out of their cutouts in the case.</li>
+</ol>
+<p><img src="models/meer5/./img/removing-motherboard.jpg" alt="Removing the motherboard" /></p>
+<h2><a class="header" href="#removing-the-fan" id="removing-the-fan">Removing the Fan:</a></h2>
+<p>The cooling fan can be removed to clean dust out of the cooling system or to access the CPU heatsink to replace the CPU thermal paste.</p>
+<p><strong>Tools required:</strong> Cross-head (Phillips) screwdriver<br />
+<strong>Time estimate:</strong> 25 minutes<br />
+<strong>Difficulty:</strong> High <span style="color:red;">●</span></p>
+<h3><a class="header" href="#steps-to-remove-the-fan" id="steps-to-remove-the-fan">Steps to remove the fan:</a></h3>
+<ol>
+<li>
+<p>Follow the steps above to <a href="models/meer5/repairs.html#removing-the-motherboard">remove the motherboard</a>.</p>
+</li>
+<li>
+<p>Completely loosen the three mounting screws (highlighted in red) and disconnect the fan cable (highlighted in green). The screws are captive, so they will not come out of the fan assembly when they are completely loosened.</p>
+</li>
+</ol>
+<p><img src="models/meer5/./img/fan-screws-and-cable.jpg" alt="Fan screws and cable locations" /></p>
+<ol start="3">
+<li>The fan can now be lifted away from the motherboard.</li>
+</ol>
+<p><img src="models/meer5/./img/fan-removed.jpg" alt="Fan removed from motherboard" /></p>
+<h2><a class="header" href="#replacing-thermal-paste" id="replacing-thermal-paste">Replacing Thermal Paste:</a></h2>
+<p>The CPU cooler dissipates heat from the CPU to the heatsink, where the CPU fan expels it from the system. Depending on your climate and the age of the machine, replacing the thermal paste between the CPU and the heatsink may help the system run cooler.</p>
+<p><strong>Tools required:</strong> Cross-head (Phillips) screwdriver<br />
+<strong>Time estimate:</strong> 35 minutes<br />
+<strong>Difficulty:</strong> High <span style="color:red;">●</span></p>
+<h3><a class="header" href="#steps-to-replace-the-thermal-paste" id="steps-to-replace-the-thermal-paste">Steps to replace the thermal paste:</a></h3>
+<ol>
+<li>
+<p>Follow the steps above to <a href="models/meer5/repairs.html#removing-the-fan">remove the fan</a>.</p>
+</li>
+<li>
+<p>Completely loosen the four screws that hold the heatsink onto the motherboard (highlighted in red). The screws are captive, so they will not come out of the heatsink brackets when completely loosened.</p>
+</li>
+</ol>
+<p><img src="models/meer5/./img/heatsink-screws.jpg" alt="Heatsink screws" /></p>
+<ol start="3">
+<li>Gently lift the heatsink off of the motherboard. </li>
+</ol>
+<p><img src="models/meer5/./img/heatsink-removed.jpg" alt="Heatsink removed from motherboard" /></p>
+<ol start="4">
+<li>Using a paper towel, clean the old thermal paste off of the heatsink and CPU. You may also use a small amount of rubbing alcohol if the old paste is dried or difficult to remove.</li>
+</ol>
+<p><img src="models/meer5/./img/heatsink-cleaned.jpg" alt="Heatsink and motherboard after cleaning" /></p>
+<ol start="5">
+<li>Apply new thermal paste to both silicon dies on the CPU. Be careful not to use too much, as just a little goes a long way.</li>
+</ol>
+<p><img src="models/meer5/./img/thermal-paste-applied.jpg" alt="Thermal paste applied to CPU" /></p>
+<ol start="6">
+<li>Reinstall the heatsink and tighten the four screws in the order indicated by the numbers stamped on the heatsink (highlighted in red).</li>
+</ol>
+<p><img src="models/meer5/./img/heatsink-screw-order.jpg" alt="Heatsink screw tightening order" /></p>
+<ol start="7">
+<li>Reinstall the cooling fan (remember to plug it in!), motherboard, RAM, drive, and bottom panel.</li>
 </ol>
 <h1><a class="header" href="#oryx-pro-oryp6" id="oryx-pro-oryp6">Oryx Pro (oryp6)</a></h1>
 <ul>
