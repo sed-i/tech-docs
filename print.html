@@ -4877,7 +4877,11 @@ You can find video instructions on this process <a href="https://youtu.be/6fIeVE
 <li>Backwards compatible with M.2 SATA and PCIe Gen 3.</li>
 </ul>
 </li>
-<li>8x 2.5&quot; SATA</li>
+<li>8x 2.5&quot; SATA
+<ul>
+<li>When using all four M.2 slots, some SATA ports will not function. See <a href="models/thelio-mega-r1.0/./repairs.html">Parts &amp; Repairs</a> for details.</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>USB
@@ -4994,7 +4998,12 @@ You can find video instructions on this process <a href="https://youtu.be/6fIeVE
 <li>Lift the inner partition away from the case.</li>
 </ol>
 <h2><a class="header" href="#addingremoving-25-storage-drives-1" id="addingremoving-25-storage-drives-1">Adding/removing 2.5&quot; storage drives:</a></h2>
-<p>Thelio Mega r1.0 supports up to eight 2.5&quot; SATA III drives.</p>
+<p>Thelio Mega r1.0 supports up to eight 2.5&quot; SATA III drives. When using four M.2 drives, the following restrictions apply:</p>
+<ul>
+<li>If the bottom right M.2 slot has a SATA drive installed, then 2.5&quot; SATA ports 4 and 5 will be unavailable (leaving a maximum of six 2.5&quot; SATA drives.)</li>
+<li>If the bottom right M.2 slot has a PCIe NVMe drive installed, then 2.5&quot; SATA ports 4, 5, 6, and 7 will be unavailable (leaving a maximum of four 2.5&quot; SATA drives.)</li>
+</ul>
+<p>To use all eight 2.5&quot; SATA III slots, use three or less M.2 drives and leave the bottom right M.2 slot empty. See <a href="models/thelio-mega-r1.0/repairs.html#replacing-the-m2-drives">Replacing the M.2 drives</a> to add, remove, or rearrange M.2 drives.</p>
 <p><strong>Tools required:</strong> Cross-head (Phillips) screwdriver (optional)<br />
 <strong>Time estimate:</strong> 10 minutes<br />
 <strong>Difficulty:</strong> Easy <span style="color:green;">●</span></p>
