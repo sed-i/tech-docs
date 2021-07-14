@@ -1,0 +1,370 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Customization &amp; Repairs - System76 Technical Documentation</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="../../theme/variables.css">
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "light" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div id="sidebar-scrollbox" class="sidebar-scrollbox">
+                <ol class="chapter"><li class="expanded affix "><a href="../../README.html">Introduction</a></li><li class="expanded "><a href="../../models/README.html"><strong aria-hidden="true">1.</strong> Current Models</a></li><li><ol class="section"><li class="expanded "><a href="../../models/addw2/README.html"><strong aria-hidden="true">1.1.</strong> Adder WS (addw2)</a></li><li><ol class="section"><li class="expanded "><a href="../../models/addw2/external-overview.html"><strong aria-hidden="true">1.1.1.</strong> External Overview</a></li><li class="expanded "><a href="../../models/addw2/internal-overview.html"><strong aria-hidden="true">1.1.2.</strong> Internal Overview</a></li><li class="expanded "><a href="../../models/addw2/repairs.html"><strong aria-hidden="true">1.1.3.</strong> Parts &amp; Repairs</a></li></ol></li><li class="expanded "><a href="../../models/bonw14/README.html"><strong aria-hidden="true">1.2.</strong> Bonobo WS (bonw14)</a></li><li><ol class="section"><li class="expanded "><a href="../../models/bonw14/external-overview.html"><strong aria-hidden="true">1.2.1.</strong> External Overview</a></li><li class="expanded "><a href="../../models/bonw14/internal-overview.html"><strong aria-hidden="true">1.2.2.</strong> Internal Overview</a></li><li class="expanded "><a href="../../models/bonw14/repairs.html"><strong aria-hidden="true">1.2.3.</strong> Parts &amp; Repairs</a></li></ol></li><li class="expanded "><a href="../../models/darp7/README.html"><strong aria-hidden="true">1.3.</strong> Darter Pro (darp7)</a></li><li><ol class="section"><li class="expanded "><a href="../../models/darp7/external-overview.html"><strong aria-hidden="true">1.3.1.</strong> External Overview</a></li><li class="expanded "><a href="../../models/darp7/internal-overview.html"><strong aria-hidden="true">1.3.2.</strong> Internal Overview</a></li><li class="expanded "><a href="../../models/darp7/repairs.html"><strong aria-hidden="true">1.3.3.</strong> Parts &amp; Repairs</a></li></ol></li><li class="expanded "><a href="../../models/galp5/README.html"><strong aria-hidden="true">1.4.</strong> Galago Pro (galp5)</a></li><li><ol class="section"><li class="expanded "><a href="../../models/galp5/external-overview.html"><strong aria-hidden="true">1.4.1.</strong> External Overview</a></li><li class="expanded "><a href="../../models/galp5/internal-overview.html"><strong aria-hidden="true">1.4.2.</strong> Internal Overview</a></li><li class="expanded "><a href="../../models/galp5/repairs.html"><strong aria-hidden="true">1.4.3.</strong> Parts &amp; Repairs</a></li></ol></li><li class="expanded "><a href="../../models/gaze15/README.html"><strong aria-hidden="true">1.5.</strong> Gazelle (gaze15)</a></li><li><ol class="section"><li class="expanded "><a href="../../models/gaze15/external-overview.html"><strong aria-hidden="true">1.5.1.</strong> External Overview</a></li><li class="expanded "><a href="../../models/gaze15/internal-overview.html"><strong aria-hidden="true">1.5.2.</strong> Internal Overview</a></li><li class="expanded "><a href="../../models/gaze15/repairs.html"><strong aria-hidden="true">1.5.3.</strong> Parts &amp; Repairs</a></li></ol></li><li class="expanded "><a href="../../models/launch_1/README.html"><strong aria-hidden="true">1.6.</strong> Launch (launch_1)</a></li><li><ol class="section"><li class="expanded "><a href="../../models/launch_1/external-overview.html"><strong aria-hidden="true">1.6.1.</strong> External Overview</a></li><li class="expanded "><a href="../../models/launch_1/repairs.html" class="active"><strong aria-hidden="true">1.6.2.</strong> Customization &amp; Repairs</a></li></ol></li><li class="expanded "><a href="../../models/lemp10/README.html"><strong aria-hidden="true">1.7.</strong> Lemur Pro (lemp10)</a></li><li><ol class="section"><li class="expanded "><a href="../../models/lemp10/external-overview.html"><strong aria-hidden="true">1.7.1.</strong> External Overview</a></li><li class="expanded "><a href="../../models/lemp10/internal-overview.html"><strong aria-hidden="true">1.7.2.</strong> Internal Overview</a></li><li class="expanded "><a href="../../models/lemp10/repairs.html"><strong aria-hidden="true">1.7.3.</strong> Parts &amp; Repairs</a></li></ol></li><li class="expanded "><a href="../../models/meer6/README.html"><strong aria-hidden="true">1.8.</strong> Meerkat (meer6)</a></li><li><ol class="section"><li class="expanded "><a href="../../models/meer6/external-overview.html"><strong aria-hidden="true">1.8.1.</strong> External Overview</a></li><li class="expanded "><a href="../../models/meer6/internal-overview.html"><strong aria-hidden="true">1.8.2.</strong> Internal Overview</a></li><li class="expanded "><a href="../../models/meer6/repairs.html"><strong aria-hidden="true">1.8.3.</strong> Parts &amp; Repairs</a></li></ol></li><li class="expanded "><a href="../../models/oryp7/README.html"><strong aria-hidden="true">1.9.</strong> Oryx Pro (oryp7)</a></li><li><ol class="section"><li class="expanded "><a href="../../models/oryp7/external-overview.html"><strong aria-hidden="true">1.9.1.</strong> External Overview</a></li><li class="expanded "><a href="../../models/oryp7/internal-overview.html"><strong aria-hidden="true">1.9.2.</strong> Internal Overview</a></li><li class="expanded "><a href="../../models/oryp7/repairs.html"><strong aria-hidden="true">1.9.3.</strong> Parts &amp; Repairs</a></li></ol></li><li class="expanded "><a href="../../models/pang10/README.html"><strong aria-hidden="true">1.10.</strong> Pangolin (pang10)</a></li><li><ol class="section"><li class="expanded "><a href="../../models/pang10/external-overview.html"><strong aria-hidden="true">1.10.1.</strong> External Overview</a></li><li class="expanded "><a href="../../models/pang10/internal-overview.html"><strong aria-hidden="true">1.10.2.</strong> Internal Overview</a></li><li class="expanded "><a href="../../models/pang10/repairs.html"><strong aria-hidden="true">1.10.3.</strong> Parts &amp; Repairs</a></li></ol></li><li class="expanded "><a href="../../models/serw12/README.html"><strong aria-hidden="true">1.11.</strong> Serval WS (serw12)</a></li><li><ol class="section"><li class="expanded "><a href="../../models/serw12/external-overview.html"><strong aria-hidden="true">1.11.1.</strong> External Overview</a></li><li class="expanded "><a href="../../models/serw12/internal-overview.html"><strong aria-hidden="true">1.11.2.</strong> Internal Overview</a></li><li class="expanded "><a href="../../models/serw12/repairs.html"><strong aria-hidden="true">1.11.3.</strong> Parts &amp; Repairs</a></li></ol></li><li class="expanded "><a href="../../models/thelio-major-intel-and-amd/README.html"><strong aria-hidden="true">1.12.</strong> Thelio Major (Intel and AMD)</a></li><li><ol class="section"><li class="expanded "><a href="../../models/thelio-major-intel-and-amd/external-overview.html"><strong aria-hidden="true">1.12.1.</strong> External Overview</a></li><li class="expanded "><a href="../../models/thelio-major-intel-and-amd/internal-overview.html"><strong aria-hidden="true">1.12.2.</strong> Internal Overview</a></li><li class="expanded "><a href="../../models/thelio-major-intel-and-amd/repairs.html"><strong aria-hidden="true">1.12.3.</strong> Parts &amp; Repairs</a></li></ol></li><li class="expanded "><a href="../../models/thelio-massive-b1.2/README.html"><strong aria-hidden="true">1.13.</strong> Thelio Massive (thelio-massive-b1.2)</a></li><li><ol class="section"><li class="expanded "><a href="../../models/thelio-massive-b1.2/external-overview.html"><strong aria-hidden="true">1.13.1.</strong> External Overview</a></li><li class="expanded "><a href="../../models/thelio-massive-b1.2/internal-overview.html"><strong aria-hidden="true">1.13.2.</strong> Internal Overview</a></li><li class="expanded "><a href="../../models/thelio-massive-b1.2/repairs.html"><strong aria-hidden="true">1.13.3.</strong> Parts &amp; Repairs</a></li></ol></li><li class="expanded "><a href="../../models/thelio-mega-r1.0/README.html"><strong aria-hidden="true">1.14.</strong> Thelio Mega (thelio-mega-r1.0)</a></li><li><ol class="section"><li class="expanded "><a href="../../models/thelio-mega-r1.0/external-overview.html"><strong aria-hidden="true">1.14.1.</strong> External Overview</a></li><li class="expanded "><a href="../../models/thelio-mega-r1.0/internal-overview.html"><strong aria-hidden="true">1.14.2.</strong> Internal Overview</a></li><li class="expanded "><a href="../../models/thelio-mega-r1.0/repairs.html"><strong aria-hidden="true">1.14.3.</strong> Parts &amp; Repairs</a></li></ol></li><li class="expanded "><a href="../../models/thelio-mira-r1.0/README.html"><strong aria-hidden="true">1.15.</strong> Thelio Mira (thelio-mira-r1.0)</a></li><li><ol class="section"><li class="expanded "><a href="../../models/thelio-mira-r1.0/external-overview.html"><strong aria-hidden="true">1.15.1.</strong> External Overview</a></li><li class="expanded "><a href="../../models/thelio-mira-r1.0/internal-overview.html"><strong aria-hidden="true">1.15.2.</strong> Internal Overview</a></li><li class="expanded "><a href="../../models/thelio-mira-r1.0/repairs.html"><strong aria-hidden="true">1.15.3.</strong> Parts &amp; Repairs</a></li></ol></li></ol></li><li class="expanded "><a href="../../models/README.html"><strong aria-hidden="true">2.</strong> Previous Models</a></li><li><ol class="section"><li class="expanded "><a href="../../models/addw1/README.html"><strong aria-hidden="true">2.1.</strong> Adder WS (addw1)</a></li><li><ol class="section"><li class="expanded "><a href="../../models/addw1/external-overview.html"><strong aria-hidden="true">2.1.1.</strong> External Overview</a></li><li class="expanded "><a href="../../models/addw1/internal-overview.html"><strong aria-hidden="true">2.1.2.</strong> Internal Overview</a></li><li class="expanded "><a href="../../models/addw1/repairs.html"><strong aria-hidden="true">2.1.3.</strong> Parts &amp; Repairs</a></li><li class="expanded "><a href="../../models/addw1/setup-specs.html"><strong aria-hidden="true">2.1.4.</strong> UEFI Setup &amp; Specs</a></li></ol></li><li class="expanded "><a href="../../models/darp6/README.html"><strong aria-hidden="true">2.2.</strong> Darter Pro (darp6)</a></li><li><ol class="section"><li class="expanded "><a href="../../models/darp6/external-overview.html"><strong aria-hidden="true">2.2.1.</strong> External Overview</a></li><li class="expanded "><a href="../../models/darp6/internal-overview.html"><strong aria-hidden="true">2.2.2.</strong> Internal Overview</a></li><li class="expanded "><a href="../../models/darp6/repairs.html"><strong aria-hidden="true">2.2.3.</strong> Parts &amp; Repairs</a></li></ol></li><li class="expanded "><a href="../../models/galp4/README.html"><strong aria-hidden="true">2.3.</strong> Galago Pro (galp4)</a></li><li><ol class="section"><li class="expanded "><a href="../../models/galp4/external-overview.html"><strong aria-hidden="true">2.3.1.</strong> External Overview</a></li><li class="expanded "><a href="../../models/galp4/internal-overview.html"><strong aria-hidden="true">2.3.2.</strong> Internal Overview</a></li><li class="expanded "><a href="../../models/galp4/repairs.html"><strong aria-hidden="true">2.3.3.</strong> Parts &amp; Repairs</a></li></ol></li><li class="expanded "><a href="../../models/lemp9/README.html"><strong aria-hidden="true">2.4.</strong> Lemur Pro (lemp9)</a></li><li><ol class="section"><li class="expanded "><a href="../../models/lemp9/external-overview.html"><strong aria-hidden="true">2.4.1.</strong> External Overview</a></li><li class="expanded "><a href="../../models/lemp9/internal-overview.html"><strong aria-hidden="true">2.4.2.</strong> Internal Overview</a></li><li class="expanded "><a href="../../models/lemp9/repairs.html"><strong aria-hidden="true">2.4.3.</strong> Parts &amp; Repairs</a></li></ol></li><li class="expanded "><a href="../../models/meer5/README.html"><strong aria-hidden="true">2.5.</strong> Meerkat (meer5)</a></li><li><ol class="section"><li class="expanded "><a href="../../models/meer5/external-overview.html"><strong aria-hidden="true">2.5.1.</strong> External Overview</a></li><li class="expanded "><a href="../../models/meer5/internal-overview.html"><strong aria-hidden="true">2.5.2.</strong> Internal Overview</a></li><li class="expanded "><a href="../../models/meer5/repairs.html"><strong aria-hidden="true">2.5.3.</strong> Parts &amp; Repairs</a></li></ol></li><li class="expanded "><a href="../../models/oryp6/README.html"><strong aria-hidden="true">2.6.</strong> Oryx Pro (oryp6)</a></li><li><ol class="section"><li class="expanded "><a href="../../models/oryp6/external-overview.html"><strong aria-hidden="true">2.6.1.</strong> External Overview</a></li><li class="expanded "><a href="../../models/oryp6/internal-overview.html"><strong aria-hidden="true">2.6.2.</strong> Internal Overview</a></li><li class="expanded "><a href="../../models/oryp6/repairs.html"><strong aria-hidden="true">2.6.3.</strong> Parts &amp; Repairs</a></li></ol></li></ol></li><li class="expanded "><a href="../../components/README.html"><strong aria-hidden="true">3.</strong> Components</a></li><li><ol class="section"><li class="expanded "><a href="../../components/intel/README.html"><strong aria-hidden="true">3.1.</strong> Intel</a></li><li><ol class="section"><li class="expanded "><a href="../../components/intel/cpu/README.html"><strong aria-hidden="true">3.1.1.</strong> Central Processing Unit (CPU)</a></li><li><ol class="section"><li class="expanded "><a href="../../components/intel/cpu/cml-u/README.html"><strong aria-hidden="true">3.1.1.1.</strong> Comet Lake-U (CML-U)</a></li></ol></li><li class="expanded "><a href="../../components/intel/me/README.html"><strong aria-hidden="true">3.1.2.</strong> Management Engine (ME)</a></li><li class="expanded "><a href="../../components/intel/pch/README.html"><strong aria-hidden="true">3.1.3.</strong> Platform Controller Hub (PCH)</a></li><li><ol class="section"><li class="expanded "><a href="../../components/intel/pch/400-lp/README.html"><strong aria-hidden="true">3.1.3.1.</strong> 400 Series Low-Power Platform Controller Hub (400 PCH-LP)</a></li></ol></li></ol></li><li class="expanded "><a href="../../components/ti/README.html"><strong aria-hidden="true">3.2.</strong> Texas Instruments (TI)</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">System76 Technical Documentation</h1>
+
+                        <div class="right-buttons">
+                            <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                            <a href="https://github.com/system76/tech-docs" title="Git repository" aria-label="Git repository">
+                                <i id="git-repository-button" class="fa fa-github"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#launch-customization--repairs" id="launch-customization--repairs">Launch (Customization &amp; Repairs)</a></h1>
+<p>The Launch Configurable Keyboard can be customized and personalized in a variety of ways. It is recommended to unplug all USB cables and devices from your Launch before changing keycaps or switches.</p>
+<ul>
+<li><a href="#connecting-and-using-launch">Connecting and using Launch</a></li>
+<li><a href="#removing-and-installing-keycaps">Removing and installing keycaps</a></li>
+<li><a href="#removing-and-installing-switches">Removing and installing switches</a></li>
+<li><a href="#removing-the-pcb">Removing the PCB</a></li>
+</ul>
+<h2><a class="header" href="#connecting-and-using-launch" id="connecting-and-using-launch">Connecting and using Launch:</a></h2>
+<p><img src="./img/launch-middle-port.png" alt="Launch ports" /></p>
+<ol>
+<li>Connect the USB-C side of either the USB-C/USB-C or USB-C/USB-A cable to the Launch's center USB-C port, shown above.</li>
+<li>Connect the other side of the cable to your computer.</li>
+<li>Connect any other USB devices to the four downstream USB ports on either side of the Launch.</li>
+</ol>
+<h2><a class="header" href="#removing-and-installing-keycaps" id="removing-and-installing-keycaps">Removing and installing keycaps:</a></h2>
+<p>Launch uses only three sizes of uniform profile keycaps, which allows for a high degree of customization. Any two keycaps of the same size can be swapped on the keyboard, and several extras are included in the box. </p>
+<p><strong>Tools required:</strong> Keycap puller<br />
+<strong>Time estimate:</strong> 20 minutes (to replace all keycaps)<br />
+<strong>Difficulty:</strong> Easy <span style="color:green;">●</span></p>
+<h3><a class="header" href="#steps-to-remove-a-keycap" id="steps-to-remove-a-keycap">Steps to remove a keycap:</a></h3>
+<ol>
+<li>Separate the two wire loops of the keycap puller and place them around two opposite corners of the keycap to be removed.</li>
+<li>Pull slowly but firmly on the keycap until it slides off the switch's stem.</li>
+</ol>
+<p><img src="./img/cap-puller.jpg" alt="Pulling a keycap" /></p>
+<h4><a class="header" href="#notes-about-removing-larger-keycaps" id="notes-about-removing-larger-keycaps">Notes about removing larger keycaps:</a></h4>
+<ul>
+<li>The included keycap puller works on all three of Launch's keycap sizes.</li>
+<li>The three 2U keycaps (both space bars and left shift) have stabilizers, so be sure to pull both sides evenly.
+<ul>
+<li>These 2U keycaps take slightly more pulling force than the rest of the keycaps.</li>
+</ul>
+</li>
+</ul>
+<p><img src="./img/cap-puller-bigger-keys.jpg" alt="Pulling larger keycaps" /></p>
+<h3><a class="header" href="#steps-to-install-a-keycap" id="steps-to-install-a-keycap">Steps to install a keycap:</a></h3>
+<ol>
+<li>Position the keycap on the switch.</li>
+<li>Press the keycap down firmly until it's fully on the switch. The cap will friction-fit onto the switch stem.
+<ul>
+<li>The 2U keycaps with stabilizers require slightly more pressure to install.</li>
+</ul>
+</li>
+</ol>
+<p><img src="./img/keycap-install.jpg" alt="Installing a keycap" /></p>
+<h2><a class="header" href="#removing-and-installing-switches" id="removing-and-installing-switches">Removing and installing switches:</a></h2>
+<p>Since Launch uses Kailh hot swap sockets, key switches can be removed and installed without soldering. </p>
+<p><strong>Note:</strong> If you are changing all of the switches in your Launch, it is recommended to completely <a href="#removing-the-pcb">remove the PCB</a>, install the switches into the top case without the PCB, then install the PCB into the case and onto the switch pins. This makes switch installation easier and makes bending switch pins or damaging the PCB much less likely.</p>
+<p><strong>Tools required:</strong> MX-style switch puller<br />
+<strong>Time estimate:</strong> ~1 minute per switch<br />
+<strong>Difficulty:</strong> Medium <span style="color:orange;">●</span></p>
+<h3><a class="header" href="#steps-to-remove-a-switch" id="steps-to-remove-a-switch">Steps to remove a switch:</a></h3>
+<ol>
+<li><a href="#removing-and-installing-keycaps">Remove the keycap</a> on the switch you wish to remove.</li>
+<li>Place the two tongs of the switch removal tool into the switch's locking tabs on the top and bottom edges of the switch.
+<ul>
+<li>The hooks should squeeze the white tabs inwards and hook under the switch's clear plastic top housing.</li>
+</ul>
+</li>
+<li>Slightly pinch the tongs together to help release the switch's locking clips from the cutout in the top case.</li>
+<li>Pull the switch upwards out of the socket.
+<ul>
+<li>The switch's locking tabs can sometimes bind on the edges of the top case. If the switch feels stuck, remove the tool and press the switch back down into place, then try removing it again.</li>
+<li>Switches take more force to remove than keycaps.</li>
+</ul>
+</li>
+</ol>
+<p><img src="./img/switch-removal.jpg" alt="Removing a switch" /></p>
+<h3><a class="header" href="#steps-to-install-a-swtich" id="steps-to-install-a-swtich">Steps to install a swtich:</a></h3>
+<ol>
+<li>Make sure the switch's pins are straight.
+<ul>
+<li>The pins must plug into the socket, and they'll miss their slots if they are bent.</li>
+</ul>
+</li>
+</ol>
+<p><img src="./img/switch-install-pins-straight.jpg" alt="Straighten switch pins" /></p>
+<ol start="2">
+<li>Orient the switch so the clear LED shine-through window aligns with the LED on the PCB, near the top of the socket.</li>
+</ol>
+<p><img src="./img/switch-install-orientation.jpg" alt="Switch orientation" /></p>
+<ol start="3">
+<li>Place the switch straight into the plate.
+<ul>
+<li><strong>Note:</strong> Forcing the pins into the hot swap socket could damage the PCB.</li>
+<li>You should be able to feel whether the pins are plugging into the socket correctly.</li>
+<li>If you feel excessive resistance, pull the switch out, double-check that the pins are straight, and try installing the switch again.</li>
+</ul>
+</li>
+<li>Once you feel the pins plug into the hot swap socket, press the switch down with more force to snap it into place within the chassis.</li>
+</ol>
+<p><img src="./img/switch-installation.jpg" alt="Installing a switch" /></p>
+<h2><a class="header" href="#removing-the-pcb" id="removing-the-pcb">Removing the PCB:</a></h2>
+<p><strong>Tools required:</strong> Keycap puller, MX-style switch puller, and cross-head (Phillips) screwdriver<br />
+<strong>Time estimate:</strong> 50 minutes<br />
+<strong>Difficulty:</strong> High <span style="color:red;">●</span></p>
+<p>If the PCB in your Launch becomes damaged and needs to be replaced, or if you are changing all of the switches on the PCB, it can be removed and replaced using these instructions.</p>
+<h3><a class="header" href="#steps-to-remove-the-pcb" id="steps-to-remove-the-pcb">Steps to remove the PCB:</a></h3>
+<ol>
+<li><a href="#removing-and-installing-keycaps">Remove all of the keycaps</a> and <a href="#removing-and-installing-switches">all of the switches</a>.</li>
+<li>Turn the keyboard over and remove the eight bottom panel screws.</li>
+<li>Remove the bottom panel.
+<ul>
+<li>Lifting the bottom panel out of the chassis may be easier with the magnetic lift bar installed.</li>
+</ul>
+</li>
+</ol>
+<p><img src="./img/bottom-panel-screws.jpg" alt="Removing bottom panel screws" /></p>
+<ol start="4">
+<li>Push the PCB up out of the chassis through one of the switch holes, then lift the PCB out of the chassis.</li>
+</ol>
+<p><img src="./img/pcb-removal.jpg" alt="Removing the PCB" /></p>
+<h3><a class="header" href="#steps-to-install-the-pcb" id="steps-to-install-the-pcb">Steps to install the PCB:</a></h3>
+<ol>
+<li>Install all of the switches into the chassis.
+<ul>
+<li>Installing switches with the PCB removed is much easier since you don't have to worry about aligning the pins individually.</li>
+</ul>
+</li>
+</ol>
+<p><img src="./img/switch-install-without-pcb.jpg" alt="Installing switches into chassis" /></p>
+<ol start="2">
+<li>Turn the chassis over and check that all of the switch pins are straight.
+<ul>
+<li>Look down the rows of pins from the sides of the chassis to identify any bent pins.</li>
+<li>If any of the pins are bent when installing the PCB, the switch or the PCB may be damaged.</li>
+<li>In the image below, the pin highlighted red is an example of a pin that is bent and needs to be straightened.</li>
+</ul>
+</li>
+</ol>
+<p><img src="./img/switch-pin-check-in-chassis.jpg" alt="Checking switch pins in chassis" /></p>
+<ol start="3">
+<li>Carefully line up the PCB with the switch pins and place it in the chassis.
+<ul>
+<li>It may be easiest to insert the top edge first since the USB-C ports need to align with the port cutouts in the chassis.</li>
+<li>If all of the switch pins feel lined up, press the PCB down little by little until all of the switch pins are fully seated in their sockets.</li>
+<li>The switch pins can be seen coming up through the sockets when they are fully seated (circled in green below).</li>
+</ul>
+</li>
+</ol>
+<p><img src="./img/switch-pins-in-sockets.jpg" alt="Switch pins fully seated in sockets" /></p>
+<ol start="4">
+<li>Install the bottom cover and its eight screws, flip the keyboard over, and put all of the keycaps back on.</li>
+</ol>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../../models/launch_1/external-overview.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../../models/lemp10/README.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="../../models/launch_1/external-overview.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="../../models/lemp10/README.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+        
+        
+        <script type="text/javascript">
+            window.playpen_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="../../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>
